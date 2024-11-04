@@ -53,6 +53,8 @@
             if (esperaSelector) {
                 console.log('Selector esperado')
             }
+
+            await browser.close()
             
         })
 
