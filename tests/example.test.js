@@ -1,6 +1,6 @@
     const puppeteer = require('puppeteer')
 
-    describe('Prueba Pagina GAP', () => {    
+    describe('Prueba Pagina GAP\n', () => {    
         it('Prueba por imagen', async () => {
             const browser = await puppeteer.launch({ headless: true,args: ['--start-maximized'],defaultViewport: {
                 width: 1920,
@@ -11,7 +11,7 @@
             await page.waitForSelector('#__next > main > header > div.o-header > div.o-container__fluid.container-fluid.d-none.d-lg-block.c-megaMenu > div > div > ul > li:nth-child(1) > a')
             const modulo = await page.$('#__next > main > header > div.o-header > div.o-container__fluid.container-fluid.d-none.d-lg-block.c-megaMenu > div > div > ul > li:nth-child(1) > a')
 
-            const moduloText = await page.evaluate(anchor => anchor.textContent, modulo);
+            const moduloText = await page.evaluate(anchor => anchor.textContent, modulo)
             if (moduloText =='Mujer') {
                 await modulo.click()
             }  else {
@@ -41,7 +41,7 @@
             await page.waitForSelector('#__next > main > header > div.o-header > div.o-container__fluid.container-fluid.d-none.d-lg-block.c-megaMenu > div > div > ul > li:nth-child(1) > a')
             const modulo = await page.$('#__next > main > header > div.o-header > div.o-container__fluid.container-fluid.d-none.d-lg-block.c-megaMenu > div > div > ul > li:nth-child(1) > a')
 
-            const moduloText = await page.evaluate(anchor => anchor.textContent, modulo);
+            const moduloText = await page.evaluate(anchor => anchor.textContent, modulo)
             if (moduloText =='Mujer') {
                 await modulo.click()
             }  else {
@@ -69,7 +69,7 @@
             await page.waitForSelector('#__next > main > header > div.o-header > div.o-container__fluid.container-fluid.d-none.d-lg-block.c-megaMenu > div > div > ul > li:nth-child(1) > a')
             const modulo = await page.$('#__next > main > header > div.o-header > div.o-container__fluid.container-fluid.d-none.d-lg-block.c-megaMenu > div > div > ul > li:nth-child(1) > a')
 
-            const moduloText = await page.evaluate(anchor => anchor.textContent, modulo);
+            const moduloText = await page.evaluate(anchor => anchor.textContent, modulo)
             if (moduloText =='Mujer') {
                 await modulo.click()
             }  else {
